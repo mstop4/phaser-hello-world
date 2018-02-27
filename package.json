@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "start": "http-server ./public",
-    "gh-pages": "push-dir --branch=gh-pages --cleanup"
+    "gh-pages": "push-dir --dir=public --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "phaser": "3.1.2"
