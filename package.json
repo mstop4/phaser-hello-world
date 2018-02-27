@@ -4,6 +4,9 @@
   "main": "index.js",
   "author": "mstop4 <mstop4@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "http-server ./gh-pages"
+  },
   "dependencies": {
     "phaser": "3.1.2"
   }
