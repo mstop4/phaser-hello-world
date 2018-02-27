@@ -5,7 +5,7 @@
   "author": "mstop4 <mstop4@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "http-server ./docs"
+    "start": "http-server ./public"
   },
   "dependencies": {
     "phaser": "3.1.2"
