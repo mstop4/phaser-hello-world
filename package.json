@@ -5,7 +5,8 @@
   "author": "mstop4 <mstop4@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "http-server ./public"
+    "start": "http-server ./public",
+    "gh-pages": "push-dir --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "phaser": "3.1.2"
