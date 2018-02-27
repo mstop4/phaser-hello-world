@@ -1,0 +1,10 @@
+{
+  "name": "phaser-hello-world",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "mstop4 <mstop4@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "phaser": "3.1.2"
+  }
+}
