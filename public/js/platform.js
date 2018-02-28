@@ -16,6 +16,9 @@ var config = {
   }
 };
 
+var score = 0;
+var scoreText;
+
 var game = new Phaser.Game(config);
 
 function preload () {
@@ -29,7 +32,6 @@ function preload () {
 }
 
 function create () {
-
   // Background
   this.add.image(400, 300, 'sky');
 
@@ -84,6 +86,9 @@ function create () {
 
   this.physics.add.collider(stars, platforms);
   this.physics.add.overlap(player, stars, collectStar, null, this);
+
+  // Score Text
+  scoreText = this.add.text(16, 16, 'Score: 0', { fontSize: '32px', fill: '#000' });
 }
 
 function update () {
@@ -105,4 +110,6 @@ function update () {
 
 function collectStar(player, star) {
   star.disableBody(true, true);
+  score += 10;
+  scoreText.setText('Score: ' + score);
 }
