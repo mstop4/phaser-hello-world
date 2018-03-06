@@ -8,5 +8,8 @@
     "start": "http-server ./public",
     "gh-pages": "push-dir --dir=public --branch=gh-pages --cleanup"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  }
 }
